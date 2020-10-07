@@ -1,0 +1,24 @@
+{
+    "development": {
+      "username": "root",
+      "password": "",
+      "database": "",
+      "host": "localhost",
+      "port": 8080,
+      "dialect": "mysql",
+      "operatorsAliases": false
+    },
+    "test": {
+      "username": "root",
+      "password": "password",
+      "database": "d",
+      "host": "localhost",
+      "port": 8080,
+      "dialect": "mysql",
+      "operatorsAliases": false
+    },
+    "production": {
+      "use_env_variable": "",
+      "dialect": "mysql"
+    }
+  }
