@@ -9,6 +9,6 @@ let User = connection.define("User", {
     name: sequelize.STRING,
     },
     location: sequelize.STRING,
-  })
+)
 
 module.exports = User;

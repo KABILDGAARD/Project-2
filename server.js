@@ -4,7 +4,7 @@ var express = require("express");
 
 // Sets up the Express App
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3306;
 
 // Requiring our models for syncing
 var db = require("./models");
@@ -35,7 +35,7 @@ require("./routes/.js")(app);
 
 
 // Syncing our sequelize models and then starting our Express app
-// For sync({}) put force: true to erase data from database everytime we reload the server
+// For sync({}) put force: true to erase data from database every time we reload the server
 db.sequelize.sync({ force: false }).then(function () {
   app.listen(PORT, function () {
     console.log("App listening on PORT http://localhost:" + PORT);

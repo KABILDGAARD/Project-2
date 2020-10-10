@@ -1,5 +1,5 @@
 let handleCreateAccount = () => {
-    event.preventDefault();
+    Event.preventDefault();
   
     let username = $('#createUsername').val().trim();
     let name = $('#name').val().trim();
